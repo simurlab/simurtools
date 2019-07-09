@@ -1,41 +1,46 @@
 SimurTools v2.0
 ===============
 
-Herramientas del laboratorio SiMuR para la captacion y analisis del movimiento humano.
+Herramientas del laboratorio SiMuR para la captacion y analisis ambulatorio del movimiento humano.
 
 
 Lista de funciones:
 ----------------------------------
 
+## Carga de archivos de datos de diferentes fuentes:
+
+* `cargar_datos_shimmer`: busca todos los maximos de una senyal
+
+
 ## Procesamiento de se�al basico:
   
-* `buscamaximos`: busca todos los máximos de una señal
-* `buscamaximosth`: busca todos los máximos que superen un umbral
-* `cumcamsimp`: integración numérica de cavalieri-simpson
-* `datacrop`: herramienta interactiva para recortar una señal
+* `buscamaximos`: busca todos los maximos de una senyal
+* `buscamaximosth`: busca todos los maximos que superen un umbral
+* `cumcamsimp`: integracion numerica de cavalieri-simpson
+* `datacrop`: herramienta interactiva para recortar una senyal
 
-## Análisis del paso:
+## Analisis del paso:
   
-* `distancia_arco`: estimación de la longitud del paso mediante el modelo del arco
-* `distancia_pendulo`: estimaciónd de la longitud del paso mediante un péndulo invertido
-* `distancia_penduloparcial`: estimación de la longitud del paso mediante modelo del péndulo +desplazamiento
-* `distancia_raizcuarta`: estimación de la longitud del paso mediante la amplitud de la aceleración
-* `eventosCOGrecto`: detección de eventos del paso
+* `distancia_arco`: estimacion de la longitud del paso mediante el modelo del arco
+* `distancia_pendulo`: estimacion de la longitud del paso mediante un pendulo invertido
+* `distancia_penduloparcial`: estimacion de la longitud del paso mediante modelo del pendulo+desplazamiento
+* `distancia_raizcuarta`: estimacion de la longitud del paso mediante la amplitud de la aceleracion
+* `eventosCOGrecto`: deteccion de eventos del paso
 
-## Estimación de distancias a partir de aceleraciones:
+## Estimacion de distancias a partir de aceleraciones:
   
-* `doble_cumsum`: doble integral desde la aceleración
-* `doble_cumsum_kose`: doble integral desde la aceleración (método de Kose)
-* `doble_cumsum_rampp`: doble integral desde la aceleración (método de Rampp)
-* `doble_cumsum_thong`: doble integral desde la aceleración (método de Thong)
-* `doble_cumsum_zijlstra`: doble integral desde la aceleración (método de zijlstra)
+* `doble_cumsum`: doble integral desde la aceleracion
+* `doble_cumsum_kose`: doble integral desde la aceleracion (metodo de Kose)
+* `doble_cumsum_rampp`: doble integral desde la aceleracion (metodo de Rampp)
+* `doble_cumsum_thong`: doble integral desde la aceleracion (metodo de Thong)
+* `doble_cumsum_zijlstra`: doble integral desde la aceleracion (metodo de zijlstra)
 
-## Alineación de sensores:
+## Alineacion de sensores:
   
-* `ejes_anatomicos`: alineación automática de un sensor en el COG a los ejes anatómicos.
+* `ejes_anatomicos`: alineacion automatica de un sensor en el COG a los ejes anatomicos.
 
-## Estimación de la orientación en 2D:
+## Estimacion de la orientacion en 2D:
   
-* `orientacioncompas`: estimación de la orientación mediante la brújula
-* `orientaciongiroscopo`: estimación por integración directa el giróscopo
-* `orientacionkalman`: estimación mediante un filtro de kalman (giróscopo +magnético)
+* `orientacioncompas`: estimacion de la orientacion mediante la brujula
+* `orientaciongiroscopo`: estimacion por integracion directa el giroscopo
+* `orientacionkalman`: estimacion mediante un filtro de kalman (giroscopo+magnetico)
