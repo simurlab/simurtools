@@ -29,8 +29,6 @@
 %                     dat_anat=(datos_sensor*RR')
 % Examples:
 %
-% See also:
-%
 
 % Author:   Rafael C. 
 % History:  12.11.2000  file created

@@ -11,7 +11,7 @@
 %
 % Examples: 
 %
-% See also: 
+% See also: doble_cumsum_kose
 
 % Author:   Diego
 % History:  

@@ -14,12 +14,7 @@
 %
 % Examples:
 %
-% See also: buscamaximos, localmaxima
-
-% Author:   JC
-% History:  xx.yy.zz    JC,  creacion del archivo
-%           18.06.2006  comentarios de JC
-%           21.01.08    documentada
+% See also: buscamaximos
 
 function maximos=buscamaximosth(Datos,th)
 

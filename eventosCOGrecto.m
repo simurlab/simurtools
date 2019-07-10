@@ -30,8 +30,7 @@
 %
 % Examples:
 %
-% See also:
-%
+
 
 
 % Historial de Modificaciones: 

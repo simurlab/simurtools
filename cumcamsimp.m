@@ -1,7 +1,6 @@
 % CUMCAMSIMP   Realiza la integral numérica de cavalieri-simpson. 
 %  y(t)=y(t-1)+1/6(x(t-1)+4x(t)+x(t+1))
 %
-%
 % Syntax: p=cumcamsimp(v)
 % 
 % Input parameters:
@@ -12,7 +11,7 @@
 %
 % Examples: 
 %
-% See also: 
+% See also: cumsum
 
 % Author:   Diego
 % History:  

@@ -15,7 +15,7 @@
 %
 % Examples: 
 %
-% See also: 
+% See also: doble_cumsum
 
 % Author:   Diego
 % History:  
