@@ -1,6 +1,4 @@
 % BUSCAMAXIMOS Detecta todos los máximos de una señal
-%
-% BUSCAMAXIMOS Detecta todos los máximos de una señal
 % 
 % Syntax: maximos=buscamaximos(datos)
 % 
