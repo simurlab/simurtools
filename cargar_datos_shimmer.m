@@ -1,10 +1,11 @@
-% cargar_datos_shimmer  Leer un archivo del shimmer tipo .csv
+% CARGAR_DATOS_SHIMMER  Leer un archivo de los shimmer
 %   medidas=cargar_datos_shimmer('FILE_NAME','ID') FILE_NAME es un .csv con su ruta, ID un identificador del sensor concreto utilizado.
 %   
 %   See also cargar_datos_camara, cargar_datos_xsens.
 %
+% medicion=cargar_datos_shimmer('./examples_datafiles/data_shimmer.csv')
 % medicion=cargar_datos_shimmer('Sensor_BAD7.txt')
-% medicion=cargar_datos_shimmer('G:\Mi unidad\Mediciones shimmer\14-03-2019\DefaultTrial_Session1_Shimmer_D54E_Calibrated_SD.csv',nombre)
+% medicion=cargar_datos_shimmer('DefaultTrial_Session1_Shimmer_D54E_Calibrated_SD.csv',nombre)
 
 function [medicion]= cargar_datos_shimmer(file,name)
     [filepath,~,ext] = fileparts(file);

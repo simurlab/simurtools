@@ -7,9 +7,9 @@ Herramientas del laboratorio SiMuR para la captacion y analisis ambulatorio del 
 Lista de funciones:
 ----------------------------------
 
-## Carga de archivos de datos de diferentes fuentes:
+## Carga de archivos de datos de diferentes tipos:
 
-* `cargar_datos_shimmer`: busca todos los maximos de una senyal
+* `cargar_datos_shimmer`: leer un archivo de datos de los shimmer 
 
 
 ## Procesamiento de señal basico:
