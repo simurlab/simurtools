@@ -1,3 +1,5 @@
+UNA PRUEBA
+
 SimurTools v2.0
 ===============
 
@@ -13,7 +15,7 @@ Lista de funciones:
 * `cargar_datos_shimmer`: leer un archivo de datos de los shimmer 
 
 
-## Procesamiento de senyal b·sico:
+## Procesamiento de senyal b√°sico:
   
 * `buscamaximos`: busca todos los maximos de una senyal
 * `buscamaximosth`: busca todos los maximos que superen un umbral
