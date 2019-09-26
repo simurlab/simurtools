@@ -1,7 +1,8 @@
 SimurTools v2.0
 ===============
 
-Herramientas del laboratorio SiMuR para la captacion y analisis ambulatorio del movimiento humano.
+Herramientas del laboratorio SiMuR para la captacion y analisis ambulatorio del
+movimiento humano.
 
 
 Lista de funciones:
