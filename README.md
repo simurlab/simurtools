@@ -12,7 +12,7 @@ Lista de funciones:
 * `cargar_datos_shimmer`: leer un archivo de datos de los shimmer 
 
 
-## Procesamiento de señal básico:
+## Procesamiento de señal basico:
   
 * `buscamaximos`: busca todos los maximos de una senyal
 * `buscamaximosth`: busca todos los maximos que superen un umbral
