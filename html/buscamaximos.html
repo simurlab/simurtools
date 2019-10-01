@@ -1,0 +1,207 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>buscamaximos</title><meta name="generator" content="MATLAB 9.7"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2019-09-30"><meta name="DC.source" content="buscamaximos.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h2>Contents</h2><div><ul><li><a href="#2">Se construye una se&ntilde;al de ejemplo para la documentaci&oacute;n.</a></li><li><a href="#3">Se calcula la derivada</a></li><li><a href="#4">Y se determina su signo</a></li><li><a href="#5">La segunda derivada indica los pasos de creciente a decreciente</a></li><li><a href="#6">Se corrige el retraso de una muestra introducida por las dos derivadas</a></li><li><a href="#7">Los m&aacute;ximos son los pulsos positivos:</a></li><li><a href="#8">La salida es:</a></li></ul></div><pre class="codeinput"><span class="comment">% BUSCAMAXIMOS Detecta todos los m&aacute;ximos de una se&#65533;al</span>
+<span class="comment">%</span>
+<span class="comment">% Syntax: maximos=buscamaximos(datos)</span>
+<span class="comment">%</span>
+<span class="comment">% Input parameters:</span>
+<span class="comment">%   datos-&gt; se&ntilde;al en la que se buscar&aacute;n los m&aacute;ximos</span>
+<span class="comment">%</span>
+<span class="comment">% Output parameters:</span>
+<span class="comment">%   maximos&lt;- se&ntilde;al del mismo tama&ntilde;o que datos, en la que aparece un 1 en</span>
+<span class="comment">%       la posici&oacute;n de cada m&aacute;ximo y un 0 en el resto de instantes.</span>
+<span class="comment">%</span>
+<span class="comment">% Examples:</span>
+<span class="comment">%</span>
+<span class="comment">% See also: buscamaximosth, localmaxima</span>
+
+<span class="comment">% Author:   Diego</span>
+<span class="comment">% History:  xx.yy.zz    Diego  creacion del archivo</span>
+<span class="comment">%           	        JC, a&ntilde;ade comentarios</span>
+<span class="comment">%           19.12.07    incorporada a la toolbox</span>
+<span class="comment">%           21.01.08    documentada</span>
+<span class="comment">%           30.09.19    adaptada a la nueva documentaci&oacute;n</span>
+
+
+<span class="keyword">function</span> maximos=buscamaximos(Datos)
+</pre><h2 id="2">Se construye una se&ntilde;al de ejemplo para la documentaci&oacute;n.</h2><pre class="codeinput"><span class="keyword">if</span> (nargin==0)
+    t=0:0.1:10;
+    Datos=sin(2*pi*0.5*t);
+    plot(Datos)
+<span class="keyword">end</span>
+</pre><img vspace="5" hspace="5" src="buscamaximos_01.png" alt=""> <h2 id="3">Se calcula la derivada</h2><pre class="codeinput">Datos=conv(Datos,[1,-1]);
+</pre><h2 id="4">Y se determina su signo</h2><pre class="codeinput">Datos=1*(Datos&gt;=0);
+<span class="keyword">if</span> (nargin==0)
+    hold <span class="string">on</span>
+    plot(Datos,<span class="string">'r'</span>);
+<span class="keyword">end</span>
+</pre><img vspace="5" hspace="5" src="buscamaximos_02.png" alt=""> <h2 id="5">La segunda derivada indica los pasos de creciente a decreciente</h2><p>Se cambia el signo para que sea positivo en m&aacute;ximos  y negativo en m&iacute;nimos</p><pre class="codeinput">Datos=conv(Datos,[-1,1]);
+</pre><h2 id="6">Se corrige el retraso de una muestra introducida por las dos derivadas</h2><pre class="codeinput">Datos=Datos(2:end);
+<span class="keyword">if</span> (nargin==0)
+    hold <span class="string">on</span>
+    plot(Datos,<span class="string">'k'</span>);
+<span class="keyword">end</span>
+</pre><img vspace="5" hspace="5" src="buscamaximos_03.png" alt=""> <h2 id="7">Los m&aacute;ximos son los pulsos positivos:</h2><pre class="codeinput">maximos=(Datos&gt;0);
+</pre><pre class="codeoutput">
+ans =
+
+  1&times;102 logical array
+
+  Columns 1 through 19
+
+   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+  Columns 20 through 38
+
+   0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0
+
+  Columns 39 through 57
+
+   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0
+
+  Columns 58 through 76
+
+   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0
+
+  Columns 77 through 95
+
+   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0
+
+  Columns 96 through 102
+
+   0   0   0   0   0   0   1
+
+</pre><h2 id="8">La salida es:</h2><p>una secuencia de unos y ceros, con los unos correspondiendo a la posici&oacute;n de los m&aacute;ximos. Los indices se pueden calcular con el comando find()</p><p class="footer"><br><a href="https://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2019b</a><br></p></div><!--
+##### SOURCE BEGIN #####
+% BUSCAMAXIMOS Detecta todos los máximos de una se�al
+% 
+% Syntax: maximos=buscamaximos(datos)
+% 
+% Input parameters:
+%   datos-> señal en la que se buscarán los máximos
+%
+% Output parameters:
+%   maximos<- señal del mismo tamaño que datos, en la que aparece un 1 en 
+%       la posición de cada máximo y un 0 en el resto de instantes.
+%
+% Examples:
+%
+% See also: buscamaximosth, localmaxima
+
+% Author:   Diego
+% History:  xx.yy.zz    Diego  creacion del archivo
+%           	        JC, añade comentarios
+%           19.12.07    incorporada a la toolbox
+%           21.01.08    documentada
+%           30.09.19    adaptada a la nueva documentación
+
+
+function maximos=buscamaximos(Datos)
+
+%% Se construye una señal de ejemplo para la documentación.
+if (nargin==0)
+    t=0:0.1:10;
+    Datos=sin(2*pi*0.5*t);
+    plot(Datos)
+end
+
+%% Se calcula la derivada
+Datos=conv(Datos,[1,-1]);
+
+%% Y se determina su signo
+Datos=1*(Datos>=0);
+if (nargin==0)
+    hold on
+    plot(Datos,'r');
+end
+
+%% La segunda derivada indica los pasos de creciente a decreciente
+% Se cambia el signo para que sea positivo en máximos
+%  y negativo en mínimos
+Datos=conv(Datos,[-1,1]);
+
+
+%% Se corrige el retraso de una muestra introducida por las dos derivadas
+Datos=Datos(2:end);
+if (nargin==0)
+    hold on
+    plot(Datos,'k');
+end
+
+%% Los máximos son los pulsos positivos:
+maximos=(Datos>0);
+
+
+%% La salida es:
+% una secuencia de unos y ceros, con los unos correspondiendo
+% a la posición de los máximos.
+% Los indices se pueden calcular con el comando find()
+
+##### SOURCE END #####
+--></body></html>

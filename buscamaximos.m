@@ -1,42 +1,64 @@
-% BUSCAMAXIMOS Detecta todos los m·ximos de una seÒal
+% BUSCAMAXIMOS Detecta todos los m√°ximos de una seÔøΩal
 % 
 % Syntax: maximos=buscamaximos(datos)
 % 
 % Input parameters:
-%   datos-> seÒal en la que se buscar·n los m·ximos
+%   datos-> se√±al en la que se buscar√°n los m√°ximos
 %
 % Output parameters:
-%   maximos<- seÒal del mismo tamaÒo que datos, en la que aparece un 1 en la posiciÛn de cada
-%  		m·ximo y un 0 en el resto de instantes.
+%   maximos<- se√±al del mismo tama√±o que datos, en la que aparece un 1 en 
+%       la posici√≥n de cada m√°ximo y un 0 en el resto de instantes.
 %
 % Examples:
 %
 % See also: buscamaximosth, localmaxima
 
+
 % Author:   Diego
 % History:  xx.yy.zz    Diego  creacion del archivo
-%           	        JC, aÒade comentarios
+%           	        JC, a√±ade comentarios
 %           19.12.07    incorporada a la toolbox
 %           21.01.08    documentada
+%           30.09.19    adaptada a la nueva documentaci√≥n
 
 
 function maximos=buscamaximos(Datos)
 
-%% Algoritmo: primero se convierte la señal en una rectangular, con unos en las
-%% pendientes positivas y ceros en las negativas.
-%% Luego se repite la operación para la señal rectangular, con lo que
-%% queda una con pulsos de valores +1 (en las transiciones de 0 a 1) y 
-%% -1 (en las transiciones de 1 a 0). Los pulsos +1 son los máximos.
+%% Se construye una se√±al de ejemplo para la documentaci√≥n.
+if (nargin==0)
+    t=0:0.1:10;
+    Datos=sin(2*pi*0.5*t);
+    plot(Datos)
+end
 
-tam=size(Datos);
-tam=tam(1);
+%% Se calcula la derivada
+Datos=conv(Datos,[1,-1]);
 
-%% Obtención de la señal rectangular:
-Datos=Datos(2:tam)-Datos(1:tam-1);
-Datos=Datos>=0;
+%% Y se determina su signo
+Datos=1*(Datos>=0);
+if (nargin==0)
+    hold on
+    plot(Datos,'r');
+end
 
-%% Obtención de las señal de pulsos:
-Datos=Datos(1:tam-2)-Datos(2:tam-1);
+%% La segunda derivada indica los pasos de creciente a decreciente
+% Se cambia el signo para que sea positivo en m√°ximos
+%  y negativo en m√≠nimos
+Datos=conv(Datos,[-1,1]);
 
-%% los máximos son los pulsos positivos:
-maximos=Datos>0;
+
+%% Se corrige el retraso de una muestra introducida por las dos derivadas
+Datos=Datos(2:end);
+if (nargin==0)
+    hold on
+    plot(Datos,'k');
+end
+
+%% Los m√°ximos son los pulsos positivos:
+maximos=(Datos>0);
+
+
+%% La salida es:
+% una secuencia de unos y ceros, con los unos correspondiendo
+% a la posici√≥n de los m√°ximos.
+% Los indices se pueden calcular con el comando find()
