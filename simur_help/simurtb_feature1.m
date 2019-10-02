@@ -1,1 +1,0 @@
-%% Solid motion representation in 3D% Tools to plot objects in 3D%% Un grupo de utilidades de interes.% 

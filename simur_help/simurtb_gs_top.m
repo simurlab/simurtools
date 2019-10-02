@@ -1,1 +1,1 @@
-%% Getting started with simurtools% Herramientas para el curso de robotica industrial%% ejemplo práctico de uso
+%% Getting started with simurtools% % A first typical use of the TB is to analyze data capture with wearable% sensors such as IMUs.% %%% Feature 1:% <simurtb_feature1.html>%%% Feature 2:% <simurtb_feature2.html>
