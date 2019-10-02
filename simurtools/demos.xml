@@ -3,8 +3,8 @@
     <name>simurtools</name>
     <type>toolbox</type>
     <icon>HelpIcon.DEMOS</icon>
-    <description>This text appears on the main page for your examples.</description>
-    <website><a href="https://robotica2019.dieecs.com">Link to your Web site</a></website>
+    <description>Solving complex problems, examples and study cases.</description>
+    <website><a href="https://simur.dieecs.com">Link to your Web site</a></website>
 
     <demosection>
         <label>Representación gráfica</label>

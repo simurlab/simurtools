@@ -20,9 +20,9 @@
             </tocitem>
             <tocitem target="simurtb_features.html">Features
                 <!-- 2nd and lower TOC levels usually have anchor IDs -->
-                <tocitem target="simurtb_feature1.html">Frames representation
+                <tocitem target="simurtb_feature1.html">Solid 3D representation
                 </tocitem>
-                <tocitem target="simurtb_feature2.html">Feature 2
+                <tocitem target="simurtb_feature2.html">Accelerometry-based measurements
                 </tocitem>
             </tocitem>
         </tocitem>
@@ -66,7 +66,7 @@
                  image="HelpIcon.HelpIcon.EXAMPLES">Toolbox Example 1
         </tocitem>
         <!-- Optional link or links to your or other Web sites -->
-        <tocitem target="http://robotica2019.dieecs.com" 
+        <tocitem target="http://simur.dieecs.com" 
                  image="$toolbox/matlab/icons/webicon.gif">
         Toolbox Web Site (Laboratorio de Robótica, Universidad de Oviedo)
         </tocitem>
