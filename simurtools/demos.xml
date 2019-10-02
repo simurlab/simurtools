@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<demos>
+    <name>simurtools</name>
+    <type>toolbox</type>
+    <icon>HelpIcon.DEMOS</icon>
+    <description>This text appears on the main page for your examples.</description>
+    <website><a href="https://robotica2019.dieecs.com">Link to your Web site</a></website>
+
+    <demosection>
+        <label>Representación gráfica</label>
+        <demoitem>
+            <label>La función voxel</label>
+            <type>M-file</type>
+            <source>VoxelExample</source>
+        </demoitem>
+    </demosection>
+
+</demos>
