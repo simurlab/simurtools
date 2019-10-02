@@ -61,10 +61,6 @@
                 <!-- ... -->
             </tocitem>
         </tocitem>
-        <!-- Optional List of Examples, with hyperlinks to examples in other files -->
-        <tocitem target="simurtb_example1.html" 
-                 image="HelpIcon.HelpIcon.EXAMPLES">Toolbox Example 1
-        </tocitem>
         <!-- Optional link or links to your or other Web sites -->
         <tocitem target="http://simur.dieecs.com" 
                  image="$toolbox/matlab/icons/webicon.gif">
