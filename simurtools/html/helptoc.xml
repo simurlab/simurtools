@@ -24,6 +24,8 @@
                 </tocitem>
                 <tocitem target="simurtb_feature2.html">Accelerometry-based measurements
                 </tocitem>
+                <tocitem target="localizacion2D.html">Estimación de la posición con un IMU en el COG
+                </tocitem>               
             </tocitem>
         </tocitem>
         <!-- User Guide comes next -->
