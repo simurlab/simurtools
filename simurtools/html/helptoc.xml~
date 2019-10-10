@@ -26,6 +26,8 @@
                 </tocitem>  
                  <tocitem target="simurtb_feature3.html">Specialized IMU-data processing 
                 </tocitem>
+                 <tocitem target="simurtb_feature4.html">
+                </tocitem>
             </tocitem>
         </tocitem>
         <!-- User Guide comes next -->
