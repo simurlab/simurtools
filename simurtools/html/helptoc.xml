@@ -15,58 +15,16 @@
         <!-- matlabroot/toolbox/matlab/icons -->
         <!-- A Getting Started Guide usually comes first -->
         <tocitem target="simurtb_gs_top.html" image="HelpIcon.GETTING_STARTED">
-            Getting Started with the Toolbox
-            <tocitem target="simurtb_reqts.html">System Requirements
-            </tocitem>
-            <tocitem target="simurtb_features.html">Features
-                <!-- 2nd and lower TOC levels usually have anchor IDs -->
-                <tocitem target="simurtb_feature1.html">Solid 3D representation tools
-                </tocitem>
-                <tocitem target="simurtb_feature2.html">Accelerometry-based estimations
-                </tocitem>  
-                 <tocitem target="simurtb_feature3.html">Specialized IMU-data processing 
-                </tocitem>
-            </tocitem>
+            Getting Started with Simurtools Toolbox
+        </tocitem>    
+        <tocitem target="simurtb_feature1.html">Rigid Body 3D Representation
         </tocitem>
-        <!-- User Guide comes next -->
-        <tocitem target="simurtb_ug_intro.html" 
-            image="HelpIcon.USER_GUIDE">Toolbox User Guide
-            <tocitem target="simurtb_ch_1.html">Setting Up the Toolbox
-            </tocitem>
-            <tocitem target="simurtb_ch_2.html">Processing Data
-            </tocitem>
-            <tocitem target="simurtb_ch_3.html">Verifying Toolbox outputs 
-                <tocitem target="simurtb_ch_3a.html">Handling Test Failures
-                </tocitem>
-            </tocitem>
+        <tocitem target="simurtb_feature2.html">Accelerometry-based Estimation
+        </tocitem>  
+        <tocitem target="simurtb_feature3.html">Specialized IMU-data Processing 
         </tocitem>
-        <!-- Function reference next -->
+         <tocitem target="simurtb_feature4.html">Supported Hardware 
+        </tocitem>
         <!-- First item is page describing function categories, if any -->
-        <tocitem target="helpfuncbycat.html" 
-                 image="HelpIcon.FUNCTION">Function Reference
-            <!-- First category, with link to anchor in above page -->
-            <tocitem target="helpfuncbycat.html#1">First Category
-                <!-- Inside category, list its functions alphabetically -->
-                <tocitem target="function_1.html">function_1</tocitem>
-                <tocitem target="function_2.html">function_2</tocitem>
-                <!-- ... -->
-            </tocitem>
-            <!-- Second category, with link to anchor in above page -->
-            <tocitem target="helpfuncbycat.html#2">Second Category
-                <!-- Inside category, list its functions alphabetically -->
-                <tocitem target="function_3.html">function_3</tocitem>
-                <tocitem target="function_4.html">function_4</tocitem>
-                <!-- ... -->
-             </tocitem>
-            <!-- Third category, with link to anchor in above page -->
-            <tocitem target="helpfuncbycat.html#3">Third category 
-                <!-- ... -->
-            </tocitem>
-        </tocitem>
-        <!-- Optional link or links to your or other Web sites -->
-        <tocitem target="http://simur.dieecs.com" 
-                 image="$toolbox/matlab/icons/webicon.gif">
-        Toolbox Web Site (Laboratorio de Robótica, Universidad de Oviedo)
-        </tocitem>
     </tocitem>
 </toc>

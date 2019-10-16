@@ -4,12 +4,41 @@
     <type>toolbox</type>
     <icon>HelpIcon.DEMOS</icon>
     <description>Solving complex problems, examples and study cases.</description>
-    <website><a href="https://simur.dieecs.com">Link to your Web site</a></website>
+    <website><a href="https://simur.dieecs.com">SiMuR Research Group</a></website>
 
     <demosection>
-        <label>Representación gráfica</label>
+        <label>Gait analysis</label>
         <demoitem>
-            <label>La función voxel</label>
+            <label>2d localization with a COG-located IMU</label>
+            <type>M-file</type>
+            <source>localizacion2D</source>
+        </demoitem>
+        <demoitem>
+            <label>2d localization with a COG-located IMU</label>
+            <type>M-file</type>
+            <source>localizacion2D</source>
+        </demoitem>
+        <demoitem>
+            <label>2d localization with a COG-located IMU</label>
+            <type>M-file</type>
+            <source>localizacion2D</source>
+        </demoitem>
+    </demosection>
+    
+    <demosection>
+        <label>Body orientation and representation</label>
+        <demoitem>
+            <label>Voxel representation</label>
+            <type>M-file</type>
+            <source>VoxelExample</source>
+        </demoitem>
+        <demoitem>
+            <label>Voxel representation</label>
+            <type>M-file</type>
+            <source>VoxelExample</source>
+        </demoitem>
+        <demoitem>
+            <label>Voxel representation</label>
             <type>M-file</type>
             <source>VoxelExample</source>
         </demoitem>
