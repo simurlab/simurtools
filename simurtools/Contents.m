@@ -9,7 +9,7 @@
 %   buscamaximos             - Detecta todos los maximos de una senhal
 %   buscamaximosth           - BUSCAMAXIMOS Detecta todos los m锟絰imos de una se锟絘l despu锟絪 de aplicar un threshold
 %   cargar_datos_shimmer     - Leer un archivo del shimmer tipo .csv
-%   cumcamsimp               - Realiza la integral num茅rica de cavalieri-simpson. 
+
 %   distancia_arco           - Calcula la distancia recorrida en un paso basandose en el modelo de movimiento angular 
 %   datacrop                 - Elimina manualmente un rango de datos de un archivo de xsens.
 %   distancia_penduloparcial - Calcula la distancia recorrida en un paso mediante el modelo del pendulo invertido 
@@ -26,3 +26,7 @@
 %   orientaciongiroscopo     - Calcula la orientaci贸n en base a los datos de un gir贸scopo situado en el COG
 %   orientacionkalman        - Calcula la orientaci贸n en base a los datos de un gir贸scopo y un comp谩s situados en el COG
 
+%   eventos_RT               - EVENTOSRT Deteccion de Initial Contact y End Contact en Tiempo Real con acelerometro en
+%   pframe                   - Representaci髇 gr醘ica de una trama o sistema de referencia
+%   psolido                  - 
+%   voxel                    - function to draw a 3-D voxel in a 3-D plot
