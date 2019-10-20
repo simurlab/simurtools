@@ -1,1 +1,0 @@
-%% Basic estimations from accelerometry% Magnitudes that can be computed from raw accelerometry data%% Un grupo de utilidades de interes.% 

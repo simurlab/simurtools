@@ -7,15 +7,34 @@
 .CodeBlock { background-color: #F7F7F7; margin: 10px 0 10px 0;}
 .S5 { border-left: 1px solid rgb(233, 233, 233); border-right: 1px solid rgb(233, 233, 233); border-top: 1px solid rgb(233, 233, 233); border-bottom: 0px none rgb(0, 0, 0); border-radius: 4px 4px 0px 0px; padding: 6px 45px 0px 13px; line-height: 16.996px; min-height: 18px; white-space: nowrap; color: rgb(0, 0, 0); font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 14px;  }
 .S6 { border-left: 1px solid rgb(233, 233, 233); border-right: 1px solid rgb(233, 233, 233); border-top: 0px none rgb(0, 0, 0); border-bottom: 0px none rgb(0, 0, 0); border-radius: 0px; padding: 0px 45px 0px 13px; line-height: 16.996px; min-height: 18px; white-space: nowrap; color: rgb(0, 0, 0); font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 14px;  }
-.S7 { border-left: 1px solid rgb(233, 233, 233); border-right: 1px solid rgb(233, 233, 233); border-top: 0px none rgb(0, 0, 0); border-bottom: 1px solid rgb(233, 233, 233); border-radius: 0px 0px 4px 4px; padding: 0px 45px 4px 13px; line-height: 16.996px; min-height: 18px; white-space: nowrap; color: rgb(0, 0, 0); font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 14px;  }</style></head><body><div class = rtcContent><h1  class = 'S0'><span>Specialized IMU-data Processing</span></h1><div  class = 'S1'><span>Tools to process data from accelerometry:</span></div><ul  class = 'S2'><li  class = 'S3'><span>busca_maximos</span></li><li  class = 'S3'><span>busca_maximosth</span></li></ul><h2  class = 'S4'><span>busca_maximos</span></h2><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S5'><span style="white-space: pre;"><span style="color: rgb(60, 118, 61);">% VOXEL: Dibujamos un cubo de lado unidad, en color rojo, trasparente 0.1</span></span></div></div><div class="inlineWrapper"><div  class = 'S6'><span style="white-space: pre;"><span>a=1; b=1; c=1;</span></span></div></div><div class="inlineWrapper"><div  class = 'S6'><span style="white-space: pre;"><span>voxel([0 0 0],[a b c],</span><span style="color: rgb(160, 32, 240);">'r'</span><span>,0.1);</span></span></div></div><div class="inlineWrapper"><div  class = 'S6'><span style="white-space: pre;"><span>grid </span><span style="color: rgb(160, 32, 240);">on</span><span>		</span><span style="color: rgb(60, 118, 61);">% Se establece una rejilla</span></span></div></div><div class="inlineWrapper"><div  class = 'S6'><span style="white-space: pre;"><span>view(-60,30)	</span><span style="color: rgb(60, 118, 61);">% Se establece el punto de vista</span></span></div></div><div class="inlineWrapper"><div  class = 'S7'><span style="white-space: pre;"><span>axis </span><span style="color: rgb(160, 32, 240);">equal</span></span></div></div></div></div>
+.S7 { border-left: 1px solid rgb(233, 233, 233); border-right: 1px solid rgb(233, 233, 233); border-top: 0px none rgb(0, 0, 0); border-bottom: 1px solid rgb(233, 233, 233); border-radius: 0px 0px 4px 4px; padding: 0px 45px 4px 13px; line-height: 16.996px; min-height: 18px; white-space: nowrap; color: rgb(0, 0, 0); font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 14px;  }</style></head><body><div class = rtcContent><h1  class = 'S0'><span>Specialized IMU-data Processing</span></h1><div  class = 'S1'><span>Digital signal processing tools:</span></div><ul  class = 'S2'><li  class = 'S3'><span>busca_maximos: busca todos los maximos de una senyal</span></li><li  class = 'S3'><span>busca_maximosth: busca todos los maximos que superen un umbral</span></li><li  class = 'S3'><span>cumcamsimp: integracion numerica de cavalieri-simpson</span></li><li  class = 'S3'><span>datacrop: herramienta interactiva para recortar una senyal</span></li></ul><div  class = 'S1'><span>Gait analysis tools:</span></div><ul  class = 'S2'><li  class = 'S3'><span>distancia_arco: estimacion de la longitud del paso mediante el modelo del arco</span></li><li  class = 'S3'><span>distancia_pendulo: estimacion de la longitud del paso mediante un pendulo invertido</span></li><li  class = 'S3'><span>distancia_penduloparcial: estimacion de la longitud del paso mediante modelo del pendulo+desplazamiento</span></li><li  class = 'S3'><span>distancia_raizcuarta: estimacion de la longitud del paso mediante la amplitud de la aceleracion</span></li><li  class = 'S3'><span>eventosCOGrecto: deteccion de eventos del paso</span></li></ul><div  class = 'S1'><span>Hardware-specific tools:</span></div><ul  class = 'S2'><li  class = 'S3'><span>cargar_datos_shimmer: leer un archivo de datos de los shimmer </span></li><li  class = 'S3'><span>cargar_datos_xsens: leer un archivo de datos de los xsens </span></li></ul><h2  class = 'S4'><span>busca_maximos</span></h2><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S5'><span style="white-space: pre;"><span style="color: rgb(60, 118, 61);">% VOXEL: Dibujamos un cubo de lado unidad, en color rojo, trasparente 0.1</span></span></div></div><div class="inlineWrapper"><div  class = 'S6'><span style="white-space: pre;"><span>a=1; b=1; c=1;</span></span></div></div><div class="inlineWrapper"><div  class = 'S6'><span style="white-space: pre;"><span>voxel([0 0 0],[a b c],</span><span style="color: rgb(160, 32, 240);">'r'</span><span>,0.1);</span></span></div></div><div class="inlineWrapper"><div  class = 'S6'><span style="white-space: pre;"><span>grid </span><span style="color: rgb(160, 32, 240);">on</span><span>		</span><span style="color: rgb(60, 118, 61);">% Se establece una rejilla</span></span></div></div><div class="inlineWrapper"><div  class = 'S6'><span style="white-space: pre;"><span>view(-60,30)	</span><span style="color: rgb(60, 118, 61);">% Se establece el punto de vista</span></span></div></div><div class="inlineWrapper"><div  class = 'S7'><span style="white-space: pre;"><span>axis </span><span style="color: rgb(160, 32, 240);">equal</span></span></div></div></div><div  class = 'S1'><span>Tools to process data from accelerometry:</span></div><ul  class = 'S2'><li  class = 'S3'><span>busca_maximos</span></li><li  class = 'S3'><span>busca_maximosth</span></li></ul></div>
 <br>
 <!-- 
 ##### SOURCE BEGIN #####
 %% Specialized IMU-data Processing
-% Tools to process data from accelerometry:
+% Digital signal processing tools:
 %% 
-% * busca_maximos
-% * busca_maximosth
+% * busca_maximos: busca todos los maximos de una senyal
+% * busca_maximosth: busca todos los maximos que superen un umbral
+% * cumcamsimp: integracion numerica de cavalieri-simpson
+% * datacrop: herramienta interactiva para recortar una senyal
+%% 
+% Gait analysis tools:
+%% 
+% * distancia_arco: estimacion de la longitud del paso mediante el modelo del 
+% arco
+% * distancia_pendulo: estimacion de la longitud del paso mediante un pendulo 
+% invertido
+% * distancia_penduloparcial: estimacion de la longitud del paso mediante modelo 
+% del pendulo+desplazamiento
+% * distancia_raizcuarta: estimacion de la longitud del paso mediante la amplitud 
+% de la aceleracion
+% * eventosCOGrecto: deteccion de eventos del paso
+%% 
+% Hardware-specific tools:
+%% 
+% * cargar_datos_shimmer: leer un archivo de datos de los shimmer 
+% * cargar_datos_xsens: leer un archivo de datos de los xsens 
 %% busca_maximos
 
 % VOXEL: Dibujamos un cubo de lado unidad, en color rojo, trasparente 0.1
@@ -24,5 +43,10 @@ voxel([0 0 0],[a b c],'r',0.1);
 grid on		% Se establece una rejilla
 view(-60,30)	% Se establece el punto de vista
 axis equal
+%% 
+% Tools to process data from accelerometry:
+%% 
+% * busca_maximos
+% * busca_maximosth
 ##### SOURCE END #####
 --></body></html>

@@ -19,7 +19,7 @@
         </tocitem>    
         <tocitem target="simurtb_feature1.html">Rigid Body 3D Representation
         </tocitem>
-        <tocitem target="simurtb_feature2.html">Accelerometry-based Estimation
+        <tocitem target="simurtb_feature2.html">Inertial sensors-based estimations
         </tocitem>  
         <tocitem target="simurtb_feature3.html">Specialized IMU-data Processing 
         </tocitem>
