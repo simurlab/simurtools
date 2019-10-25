@@ -7,40 +7,16 @@
     <website><a href="https://simur.dieecs.com">SiMuR Research Group</a></website>
 
     <demosection>
-        <label>Gait analysis</label>
+        <label>Biomechanics apps</label>
         <demoitem>
-            <label>2d localization with a COG-located IMU</label>
+            <label>Localization in 2D with a COG-located IMU</label>
             <type>M-file</type>
             <source>localizacion2D</source>
         </demoitem>
         <demoitem>
             <label>Squat jump evaluation with different technologies</label>
             <type>M-file</type>
-            <source>localizacion2D</source>
-        </demoitem>
-        <demoitem>
-            <label>2d localization with a COG-located IMU</label>
-            <type>M-file</type>
-            <source>localizacion2D</source>
-        </demoitem>
-    </demosection>
-    
-    <demosection>
-        <label>Body orientation and representation</label>
-        <demoitem>
-            <label>Voxel representation</label>
-            <type>M-file</type>
-            <source>VoxelExample</source>
-        </demoitem>
-        <demoitem>
-            <label>Voxel representation</label>
-            <type>M-file</type>
-            <source>VoxelExample</source>
-        </demoitem>
-        <demoitem>
-            <label>Voxel representation</label>
-            <type>M-file</type>
-            <source>VoxelExample</source>
+            <source>DemoSaltos</source>
         </demoitem>
     </demosection>
 

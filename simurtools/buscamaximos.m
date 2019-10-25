@@ -40,6 +40,6 @@ Datos=conv(Datos,[-1,1]);
 %% Se corrige el retraso de una muestra introducida por las dos derivadas
 Datos=Datos(2:end);
 
-%% Los máximos son los pulsos positivos:
+%% Los maximos son los pulsos positivos:
 maximos=(Datos>0);
 

@@ -30,3 +30,7 @@
 %   pframe                   - Representación gráfica de una trama o sistema de referencia
 %   psolido                  - 
 %   voxel                    - function to draw a 3-D voxel in a 3-D plot
+%   kin_irb120               - kin_irb120
+%   eventossalto             - Detecta 4 eventos a partir de las acelerariones verticales
+%   test_urdf                - VR:
+%   test_urdf                - VR:
