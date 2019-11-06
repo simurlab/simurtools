@@ -13,12 +13,21 @@
 % * orientaciongiroscopo: estimacion por integracion directa el giroscopo
 % * orientacionkalman: estimacion mediante un filtro de kalman (giroscopo+magnetico)
 
+
+%% Estimate 3D orientations from acc, gyro or magnetic signals
+% Variables que se pueden estimar .
+
+%%
+%
+% * triad: estimacion de la orientacion 3D mediante acelerometros y giroscopos
+
+
 %% Detect Gait Events 
 % Diferentes funciones relacionadas con eventos del paso.
 
 %%
 %
-% * <eventosRT.html eventosRT: detección de eventos del paso de manera secuencial o en tiempo real>
+% * <eventosRT.html eventosRT: detecciï¿½n de eventos del paso de manera secuencial o en tiempo real>
 % * eventosCOGrecto: deteccion de eventos del paso
 
 %% Estimate Gait Variables 

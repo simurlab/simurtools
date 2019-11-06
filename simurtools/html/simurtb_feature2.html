@@ -6,7 +6,7 @@
    <!--
 This HTML was auto-generated from MATLAB code.
 To make changes, update the MATLAB code and republish this document.
-      --><title>Estimations with inertial sensors</title><meta name="generator" content="MATLAB 9.7"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2019-10-30"><meta name="DC.source" content="simurtb_feature2.m"><style type="text/css">
+      --><title>Estimations with inertial sensors</title><meta name="generator" content="MATLAB 9.7"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2019-11-06"><meta name="DC.source" content="simurtb_feature2.m"><style type="text/css">
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
 
 html { min-height:100%; margin-bottom:1px; }
@@ -66,7 +66,7 @@ table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px soli
 
 
 
-  </style></head><body><div class="content"><h1>Estimations with inertial sensors</h1><!--introduction--><p>Simurtools Toolbox&#8482; include tools analyze IMUs signals for motion monitoring purposes.</p><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#1">Estimate 2D orientations from gyro signals</a></li><li><a href="#3">Detect Gait Events</a></li><li><a href="#5">Estimate Gait Variables</a></li></ul></div><h2 id="1">Estimate 2D orientations from gyro signals</h2><p>Variables que se pueden estimar con giroscopios.</p><div><ul><li><a href="orientacioncompas.html">orientacioncompas: estimacion de la orientacion mediante la brujula</a></li><li>orientaciongiroscopo: estimacion por integracion directa el giroscopo</li><li>orientacionkalman: estimacion mediante un filtro de kalman (giroscopo+magnetico)</li></ul></div><h2 id="3">Detect Gait Events</h2><p>Diferentes funciones relacionadas con eventos del paso.</p><div><ul><li><a href="eventosRT.html">eventosRT: detecci&oacute;n de eventos del paso de manera secuencial o en tiempo real</a></li><li>eventosCOGrecto: deteccion de eventos del paso</li></ul></div><h2 id="5">Estimate Gait Variables</h2><p>Diferentes funciones relacionadas con variables del paso.</p><div><ul><li>distancia_arco: estimacion de la longitud del paso mediante el modelo del arco</li><li>distancia_pendulo: estimacion de la longitud del paso mediante un pendulo invertido</li><li>distancia_penduloparcial: estimacion de la longitud del paso mediante modelo del pendulo+desplazamiento</li><li>distancia_raizcuarta: estimacion de la longitud del paso mediante la amplitud de la aceleracion</li></ul></div><p class="footer"><br><a href="https://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2019b</a><br></p></div><!--
+  </style></head><body><div class="content"><h1>Estimations with inertial sensors</h1><!--introduction--><p>Simurtools Toolbox&#8482; include tools analyze IMUs signals for motion monitoring purposes.</p><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#1">Estimate 2D orientations from gyro signals</a></li><li><a href="#3">Estimate 3D orientations from acc, gyro or magnetic signals</a></li><li><a href="#5">Detect Gait Events</a></li><li><a href="#7">Estimate Gait Variables</a></li></ul></div><h2 id="1">Estimate 2D orientations from gyro signals</h2><p>Variables que se pueden estimar con giroscopios.</p><div><ul><li><a href="orientacioncompas.html">orientacioncompas: estimacion de la orientacion mediante la brujula</a></li><li>orientaciongiroscopo: estimacion por integracion directa el giroscopo</li><li>orientacionkalman: estimacion mediante un filtro de kalman (giroscopo+magnetico)</li></ul></div><h2 id="3">Estimate 3D orientations from acc, gyro or magnetic signals</h2><p>Variables que se pueden estimar .</p><div><ul><li>triad: estimacion de la orientacion 3D mediante acelerometros y giroscopos</li></ul></div><h2 id="5">Detect Gait Events</h2><p>Diferentes funciones relacionadas con eventos del paso.</p><div><ul><li><a href="eventosRT.html">eventosRT: detecci&#65533;n de eventos del paso de manera secuencial o en tiempo real</a></li><li>eventosCOGrecto: deteccion de eventos del paso</li></ul></div><h2 id="7">Estimate Gait Variables</h2><p>Diferentes funciones relacionadas con variables del paso.</p><div><ul><li>distancia_arco: estimacion de la longitud del paso mediante el modelo del arco</li><li>distancia_pendulo: estimacion de la longitud del paso mediante un pendulo invertido</li><li>distancia_penduloparcial: estimacion de la longitud del paso mediante modelo del pendulo+desplazamiento</li><li>distancia_raizcuarta: estimacion de la longitud del paso mediante la amplitud de la aceleracion</li></ul></div><p class="footer"><br><a href="https://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2019b</a><br></p></div><!--
 ##### SOURCE BEGIN #####
 %% Estimations with inertial sensors
 % Simurtools Toolbox(TM) include tools analyze IMUs signals for motion
@@ -83,12 +83,21 @@ table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px soli
 % * orientaciongiroscopo: estimacion por integracion directa el giroscopo
 % * orientacionkalman: estimacion mediante un filtro de kalman (giroscopo+magnetico)
 
+
+%% Estimate 3D orientations from acc, gyro or magnetic signals
+% Variables que se pueden estimar .
+
+%%
+%
+% * triad: estimacion de la orientacion 3D mediante acelerometros y giroscopos
+
+
 %% Detect Gait Events 
 % Diferentes funciones relacionadas con eventos del paso.
 
 %%
 %
-% * <eventosRT.html eventosRT: detección de eventos del paso de manera secuencial o en tiempo real>
+% * <eventosRT.html eventosRT: detecci�n de eventos del paso de manera secuencial o en tiempo real>
 % * eventosCOGrecto: deteccion de eventos del paso
 
 %% Estimate Gait Variables 
