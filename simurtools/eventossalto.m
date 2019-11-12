@@ -3,13 +3,13 @@
 %
 % EVENTOSSALTO Tomando como base las aceleraciones verticales del COG realiza un proceso de
 % filtrado que le permite diferenciar cada salto. Una vez detectado un salto, realiza un proceso de detecci�n de
-% m�nimos y m�ximos que permite identificar los eventos
+% minimos y maximos que permite identificar los eventos
 % Inicio,Preparacion,PreContacto, y Fin
 %
 % Sintax: tiempos=eventossalto(AccVert,frecuencia)
 %
-% Parámetros de entrada:
-%    AccVert       - vector con la aceleraci�n vertical. Puede ser de un
+% Parametros de entrada:
+%    AccVert       - vector con la aceleracion vertical. Puede ser de un
 %                    salto o de varios. No puede tener medios saltos. Puede
 %                    contener instantes de tiempo en los que se está
 %                    estático, pero no los correspondientes a movimientos
@@ -17,8 +17,8 @@
 %    frecuencia    - entero indicando la frecuencia de muestreo. Por
 %                    defecto vale 100Hz.
 %
-% Parámetros de salida:
-%    tiempos: vector del mismo tamaño que los datos, con unos en las posiciones 
+% Parametros de salida:
+%    tiempos: vector del mismo tamanyo que los datos, con unos en las posiciones 
 %             de los eventos y ceros el resto:
 %             tiempos(:,1)=AccVert;
 %             tiempos(:,2)=deteccion de inicio de salto
@@ -33,7 +33,7 @@
 
 
 % Historial de Modificaciones: 
-%  Desarrollado por Alberto Castañon.
+%  Desarrollado por Alberto Castanon.
 %  Modificado por: Diego, 24-ene-07 -> adaptacion del codigo a siloptoolbox
 %  Modificad por : Diego, 18-dic-07 -> adaptacion a v0.3 
 

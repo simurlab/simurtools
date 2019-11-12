@@ -7,9 +7,9 @@
 
 %%
 % 
-% * <voxel.html Draw a rectangular box>
-% * <psolido.html A prisma defined by corners>
-% * <pframe.html Draw a frame xyz>
+% * <voxel.html voxel: draw a rectangular box>
+% * <psolido.html psolido: define a prisma defined by corners>
+% * <pframe.html pframe: draw a frame xyz>
 
 
 %% Robot Manipulators Models
@@ -17,6 +17,6 @@
 
 %%
 % 
-% * <kin_irb120.html Symbolic direct kinematics matrix for the robot irb-120>
-% * <irb120vr.html To use with the Matlab VR Toolbox>
-% * <irb120simulink.html To use with Simulink>
+% * <kin_irb120.html kin_irb120: symbolic direct kinematics matrix for the robot irb-120>
+% * <irb120vr.html irb120vr: to use with the Matlab VR Toolbox>
+% * <irb120simulink.html irb120simulink: model to use with Simulink>

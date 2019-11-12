@@ -1,29 +1,30 @@
 % CARGAR_DATOS_SHIMMER Leer un archivo del shimmer tipo .csv
 %
 % Syntax: 
-%   [medicion]= cargar_datos_shimmer(file,name)
+%   [medicion]= cargar_datos_shimmer(file,idname)
 % 
 % Input parameters:
 %   file-> nombre del archivo
-%   name-> identificador del sensor
+%   idname-> identificador del sensor
 %
 % Output parameters:
 %   medicion<- Datos leidos
 %
 % Examples:
-%   medicion=cargar_datos_shimmer('Sensor_BAD7.txt',nombre)
+%   medicion=cargar_datos_shimmer('Sensor_BAD7.txt','walkCOG')
 %
 % See also: cargar_datos_camara, cargar_datos_xsens
 
-% Author:   JC
+% Author:   Leticia
+%           JC incorpora a tb 12-12-2019
 
-function [medicion]= cargar_datos_shimmer(file,name)
+function [medicion]= cargar_datos_shimmer(file,idname)
     [filepath,~,ext] = fileparts(file);
     medicion=[];
     if (nargin<2)
-		name='imu';
+		idname='imu';
     end
-    medicion.Nombre=name;
+    medicion.Nombre=idname;
     if ext=='.csv'
         
         med=readtable(file,'ReadVariableNames',false,'TextType','string');
