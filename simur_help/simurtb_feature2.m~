@@ -8,7 +8,7 @@
 
 %%
 %
-% * <calibra_ejez.html calibra_ejez: rotational method based on accelerometers, magnetic and triad.>
+% * triad: estimacion de la orientacion 3D mediante acelerometros y giroscopos
 
 
 %% Estimate 2D orientations from gyro signals

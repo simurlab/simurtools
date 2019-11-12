@@ -10,5 +10,5 @@
 
 %%
 %
-% * <vcargar_datos_shimmer.html cargar_datos_shimmer: leer un archivo de datos de los shimmer> 
-% * <cargar_datos_xsens.html cargar_datos_xsens: leer un archivo de datos de los xsens> 
+% * <carga_datos_shimmer.html carga_datos_shimmer: leer un archivo de datos de los shimmer> 
+% * <carga_datos_xsens.html carga_datos_xsens: leer un archivo de datos de los xsens> 
