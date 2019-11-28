@@ -541,8 +541,8 @@ case 'contour'
 
     % retrieve contour coordinates (x,y) from contourc function output
     while ~finished
-        x(1:num,nLevel) = C(1,2:num+1);
-        y(1:num,nLevel) = C(2,2:num+1);
+        x(1:num,nLevel) = C(1,2:num+1).';
+        y(1:num,nLevel) = C(2,2:num+1).';
         C(1,:) = shift(C(1,:),-(num+1));
         C(2,:) = shift(C(2,:),-(num+1));
         sumPairs = sumPairs + num + 1;
