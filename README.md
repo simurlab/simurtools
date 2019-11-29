@@ -1,8 +1,8 @@
-SimurTools Toolbox v1.0
-=======================
+SimurTools 
+===========
 
-Herramientas del laboratorio SiMuR para la captacion y analisis ambulatorio del
-movimiento humano y la robótica.
+Toolbox de matlab del laboratorio SiMuR para la captacion y analisis del
+movimiento humano y la robÃ³tica.
 
 
 
