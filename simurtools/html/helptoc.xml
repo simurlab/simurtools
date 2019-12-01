@@ -17,11 +17,11 @@
         <!-- <tocitem target="simurtb_gs_top.html" image="HelpIcon.GETTING_STARTED">
             Getting Started with Simurtools Toolbox
         </tocitem>  -->  
-        <tocitem target="simurtb_feature1.html">Robotics related tools
+        <tocitem target="simurtb_roboticsrelated.html">Robotics related tools
         </tocitem>  
-        <tocitem target="simurtb_feature2.html">Estimations with inertial sensors
+        <tocitem target="simurtb_imusignals.html">Estimations with inertial sensors
         </tocitem>  
-        <tocitem target="simurtb_feature3.html">Digital Signal Processing  
+        <tocitem target="simurtb_dsptools.html">Digital Signal Processing  
         </tocitem>
          <tocitem target="simurtb_hardware.html">Hardware-specific tools
         </tocitem> 
