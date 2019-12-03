@@ -21,8 +21,6 @@
         </tocitem>  
         <tocitem target="simurtb_imusignals.html">Estimations with inertial sensors
         </tocitem>  
-        <tocitem target="simurtb_dsptools.html">Digital Signal Processing  
-        </tocitem>
          <tocitem target="simurtb_hardware.html">Hardware-specific tools
         </tocitem> 
         <!-- First item is page describing function categories, if any -->
