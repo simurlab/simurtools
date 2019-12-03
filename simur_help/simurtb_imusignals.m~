@@ -9,8 +9,8 @@
 %%
 %
 % * <calibra_mounting.html calibra_mounting: rotational method based on accelerometers, magnetic and triad.>
-% * <calibra_anatomical.html calibra_anatomical: calibration based on accelerometers for vertical axis.>
-% * calibra_ejez: DEPRECATED. Use calibra_mounting instead. 
+% * <calibra_anatomical.html calibra_anatomical: calibration method based on accelerometers. >
+% * <calicalibra_ejez: rotational method based on accelerometers, magnetic and triad.>
 
 
 %% Estimate 2D orientations from gyro signals
