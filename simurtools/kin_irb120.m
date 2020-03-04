@@ -9,17 +9,20 @@ if (nargin<1)
     num_ejes=5;
 end
 
-syms t0 t1 t2 t3 t4 t5
+
 if num_ejes==5,
+    syms t0 t1 t2 t3 t4
     theta = [t0 t1+(pi/2) t2 t3 t4];
     dof=5;
 else
+    num_ejes=6;
+    syms t0 t1 t2 t3 t4 t5
     theta = [t0 t1+(pi/2) t2 t3 t4 t5];
-    dof = 6;
+    dof=6;
 end
 
 % Parámetros DH del ABB irb-120:
-d = [290 0 0 302 0 72];
+d = [390 0 0 302 0 72];
 a = [0 -270 -70 0 0 0];
 alpha = [-pi/2 0 pi/2 -pi/2 pi/2 0];
 
@@ -32,9 +35,10 @@ M = eye(4,4);
 
 %% Matriz homogénea de cada eslabón:
 for i = 1:dof
-    T{i} = simplify(dhparam2matrix(theta(i), d(i), a(i), alpha(i))); 
+    T{i} = simplify(dhparam2matrix(theta(i), d(i), a(i), alpha(i)));
     M = M*T{i};
-    T_mult{i} = M;
+    T_mult{i} = M
+    pause
 end
 % Matriz cinemática directa:
 if num_ejes==5,

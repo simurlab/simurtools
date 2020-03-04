@@ -1,9 +1,8 @@
 %% Hardware-specific tools  
-% Simurtools Toolbox(TM) is ready to work with some specific devices, and the data files they generate:
-% * Xsens (c)
-% * Shimmer (c)
-% * Optitrack (c)
+% Simurtools Toolbox(TM) is ready to work with some specific sensor devices and 
+% the data files they generate, currently: Xsens(c), Shimmer (c), Optitrack (c)
 %
+% <<hardwaretools.png>>
 
 %% Load data files
 % Read files as generated from different devices:
