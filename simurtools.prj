@@ -1,14 +1,14 @@
 <deployment-project plugin="plugin.toolbox" plugin-version="1.0">
-  <configuration build-checksum="1806465221" file="/Users/juan/MATLAB/projects/simurtools.prj" location="/Users/juan/MATLAB/projects" name="simurtools" target="target.toolbox" target-name="Package Toolbox">
+  <configuration build-checksum="1806465221" file="C:\Users\juancarlos\Documents\MATLAB\projects\simurtools\simurtools.prj" location="C:\Users\juancarlos\Documents\MATLAB\projects\simurtools" name="simurtools" target="target.toolbox" target-name="Package Toolbox">
     <param.appname>simurtools</param.appname>
     <param.authnamewatermark>SimurLab</param.authnamewatermark>
     <param.email>juan@uniovi.es</param.email>
     <param.company>SimurLab</param.company>
-    <param.summary>Herramientas del Laboratorio SiMuR, v2019oct</param.summary>
-    <param.description>Herramientas del Laboratorio SiMuR, v2019dic-r1</param.description>
-    <param.screenshot>/Users/juan/Desktop/simurtblogo.png</param.screenshot>
-    <param.version>0.12.1</param.version>
-    <param.output>${PROJECT_ROOT}/simurtools.mltbx</param.output>
+    <param.summary>Herramientas del Laboratorio SiMuR, v2020 rev.01</param.summary>
+    <param.description>Herramientas del Laboratorio SiMuR</param.description>
+    <param.screenshot />
+    <param.version>20.01</param.version>
+    <param.output>${PROJECT_ROOT}\simurtools.mltbx</param.output>
     <param.products.name>
       <item>Simulink</item>
       <item>Robotics System Toolbox</item>
@@ -22,10 +22,10 @@
       <item>104</item>
     </param.products.id>
     <param.products.version>
-      <item>10.0</item>
-      <item>3.0</item>
-      <item>8.3</item>
-      <item>4.7</item>
+      <item>10.1</item>
+      <item>3.1</item>
+      <item>8.4</item>
+      <item>4.8</item>
     </param.products.version>
     <param.platforms />
     <param.guid>9c8f571a-25e9-44a2-8073-52b1fccab54e</param.guid>
@@ -104,12 +104,16 @@ simur_help/*
     <param.demosxml />
     <param.apps />
     <param.registered.apps />
-    <param.docs>${PROJECT_ROOT}/simurtools/simurtools/info.xml</param.docs>
-    <param.getting.started.guide>${PROJECT_ROOT}/simurtools/doc/GettingStarted.mlx</param.getting.started.guide>
+    <param.docs>${PROJECT_ROOT}\simurtools\info.xml</param.docs>
+    <param.getting.started.guide>${PROJECT_ROOT}\simurtools\doc\GettingStarted.mlx</param.getting.started.guide>
     <param.matlabpath.excludes />
     <param.javaclasspath.excludes />
     <param.exported.on.package>false</param.exported.on.package>
-    <param.required.addons />
+    <param.required.addons>
+      <requiredaddons>
+        <requiredAddOn downloadURL="" earliest="earliest" fromRepository="false" id="9c8f571a-25e9-44a2-8073-52b1fccab54e" include="true" latest="latest">simurtools</requiredAddOn>
+      </requiredaddons>
+    </param.required.addons>
     <param.matlab.project.id />
     <param.matlab.project.name />
     <param.release.start />
@@ -126,6 +130,7 @@ simur_help/*
     <param.additional.sw.mac.url />
     <param.additional.sw.linux.url />
     <unset>
+      <param.screenshot />
       <param.output />
       <param.platforms />
       <param.exclude.pcodedmfiles />
@@ -135,7 +140,6 @@ simur_help/*
       <param.matlabpath.excludes />
       <param.javaclasspath.excludes />
       <param.exported.on.package />
-      <param.required.addons />
       <param.matlab.project.id />
       <param.matlab.project.name />
       <param.release.current.only />
@@ -151,71 +155,77 @@ simur_help/*
       <param.additional.sw.linux.url />
     </unset>
     <fileset.rootdir>
-      <file>${PROJECT_ROOT}/simurtools</file>
+      <file>${PROJECT_ROOT}\simurtools</file>
     </fileset.rootdir>
     <fileset.rootfiles>
-      <file>${PROJECT_ROOT}/simurtools/.git</file>
-      <file>${PROJECT_ROOT}/simurtools/doc</file>
-      <file>${PROJECT_ROOT}/simurtools/simur_data</file>
-      <file>${PROJECT_ROOT}/simurtools/simur_demos</file>
-      <file>${PROJECT_ROOT}/simurtools/simur_help</file>
-      <file>${PROJECT_ROOT}/simurtools/simurtools</file>
+      <file>${PROJECT_ROOT}\simurtools\buscamaximos.m</file>
+      <file>${PROJECT_ROOT}\simurtools\buscamaximosth.m</file>
+      <file>${PROJECT_ROOT}\simurtools\calibra_anatomical.m</file>
+      <file>${PROJECT_ROOT}\simurtools\calibra_ejez.m</file>
+      <file>${PROJECT_ROOT}\simurtools\calibra_mounting.m</file>
+      <file>${PROJECT_ROOT}\simurtools\cargar_datos_shimmer.m</file>
+      <file>${PROJECT_ROOT}\simurtools\cargar_datos_silop.m</file>
+      <file>${PROJECT_ROOT}\simurtools\cargar_datos_xsens.m</file>
+      <file>${PROJECT_ROOT}\simurtools\Contents.m</file>
+      <file>${PROJECT_ROOT}\simurtools\datacrop.m</file>
+      <file>${PROJECT_ROOT}\simurtools\demos.xml</file>
+      <file>${PROJECT_ROOT}\simurtools\dinteg_cms.m</file>
+      <file>${PROJECT_ROOT}\simurtools\dinteg_ddi.m</file>
+      <file>${PROJECT_ROOT}\simurtools\dinteg_lri.m</file>
+      <file>${PROJECT_ROOT}\simurtools\dinteg_msi.m</file>
+      <file>${PROJECT_ROOT}\simurtools\dinteg_ofi.m</file>
+      <file>${PROJECT_ROOT}\simurtools\distancia_arco.m</file>
+      <file>${PROJECT_ROOT}\simurtools\distancia_pendulo.m</file>
+      <file>${PROJECT_ROOT}\simurtools\distancia_penduloparcial.m</file>
+      <file>${PROJECT_ROOT}\simurtools\distancia_raizcuarta.m</file>
+      <file>${PROJECT_ROOT}\simurtools\doble_cumsum_zijlstra.m</file>
+      <file>${PROJECT_ROOT}\simurtools\esfera.m</file>
+      <file>${PROJECT_ROOT}\simurtools\eventos_RT.m</file>
+      <file>${PROJECT_ROOT}\simurtools\eventosCOGrecto.m</file>
+      <file>${PROJECT_ROOT}\simurtools\eventossalto.m</file>
+      <file>${PROJECT_ROOT}\simurtools\html</file>
+      <file>${PROJECT_ROOT}\simurtools\importfile_shim.m</file>
+      <file>${PROJECT_ROOT}\simurtools\importfile_xsens.m</file>
+      <file>${PROJECT_ROOT}\simurtools\info copia.xml</file>
+      <file>${PROJECT_ROOT}\simurtools\info.xml</file>
+      <file>${PROJECT_ROOT}\simurtools\kin_irb120.m</file>
+      <file>${PROJECT_ROOT}\simurtools\Modelos</file>
+      <file>${PROJECT_ROOT}\simurtools\orientacioncompas.m</file>
+      <file>${PROJECT_ROOT}\simurtools\orientaciongiroscopo.m</file>
+      <file>${PROJECT_ROOT}\simurtools\orientacionkalman.m</file>
+      <file>${PROJECT_ROOT}\simurtools\pframe.m</file>
+      <file>${PROJECT_ROOT}\simurtools\private</file>
+      <file>${PROJECT_ROOT}\simurtools\psolido.m</file>
+      <file>${PROJECT_ROOT}\simurtools\slprj</file>
+      <file>${PROJECT_ROOT}\simurtools\sphere3d.m</file>
+      <file>${PROJECT_ROOT}\simurtools\test_urdf.m</file>
+      <file>${PROJECT_ROOT}\simurtools\triad.m</file>
+      <file>${PROJECT_ROOT}\simurtools\voxel.m</file>
     </fileset.rootfiles>
     <fileset.depfun.included />
     <fileset.depfun.excluded />
     <fileset.package />
     <build-deliverables>
-      <file location="${PROJECT_ROOT}" name="simurtools.mltbx" optional="false">/Users/juan/MATLAB/projects/simurtools.mltbx</file>
+      <file location="${PROJECT_ROOT}" name="simurtools.mltbx" optional="false">C:\Users\juancarlos\Documents\MATLAB\projects\simurtools\simurtools.mltbx</file>
     </build-deliverables>
     <workflow />
     <matlab>
-      <root>/Applications/MATLAB_R2019b.app</root>
-      <toolboxes>
-        <toolbox name="matlabcoder" />
-        <toolbox name="embeddedcoder" />
-        <toolbox name="fixedpoint" />
-        <toolbox name="matlabhdlcoder" />
-        <toolbox name="neuralnetwork" />
-      </toolboxes>
-      <toolbox>
-        <matlabcoder>
-          <enabled>true</enabled>
-        </matlabcoder>
-      </toolbox>
-      <toolbox>
-        <embeddedcoder>
-          <enabled>true</enabled>
-        </embeddedcoder>
-      </toolbox>
-      <toolbox>
-        <fixedpoint>
-          <enabled>true</enabled>
-        </fixedpoint>
-      </toolbox>
-      <toolbox>
-        <matlabhdlcoder>
-          <enabled>true</enabled>
-        </matlabhdlcoder>
-      </toolbox>
-      <toolbox>
-        <neuralnetwork>
-          <enabled>true</enabled>
-        </neuralnetwork>
-      </toolbox>
+      <root>C:\Program Files\MATLAB\R2020a</root>
+      <toolboxes />
     </matlab>
     <platform>
-      <unix>true</unix>
-      <mac>true</mac>
-      <windows>false</windows>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
       <win2k>false</win2k>
       <winxp>false</winxp>
       <vista>false</vista>
       <linux>false</linux>
       <solaris>false</solaris>
-      <osver>10.15.1</osver>
+      <osver>10.0</osver>
       <os32>false</os32>
       <os64>true</os64>
-      <arch>maci64</arch>
+      <arch>win64</arch>
       <matlab>true</matlab>
     </platform>
   </configuration>
