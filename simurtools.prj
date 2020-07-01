@@ -1,32 +1,17 @@
 <deployment-project plugin="plugin.toolbox" plugin-version="1.0">
   <configuration build-checksum="1806465221" file="C:\Users\juancarlos\Documents\MATLAB\projects\simurtools\simurtools.prj" location="C:\Users\juancarlos\Documents\MATLAB\projects\simurtools" name="simurtools" target="target.toolbox" target-name="Package Toolbox">
-    <param.appname>simurtools</param.appname>
-    <param.authnamewatermark>SimurLab</param.authnamewatermark>
+    <param.appname>SimurToolbox</param.appname>
+    <param.authnamewatermark>Simur RG</param.authnamewatermark>
     <param.email>juan@uniovi.es</param.email>
-    <param.company>SimurLab</param.company>
-    <param.summary>Herramientas del Laboratorio SiMuR, v2020 rev.01</param.summary>
-    <param.description>Herramientas del Laboratorio SiMuR</param.description>
-    <param.screenshot />
+    <param.company>Simur Laboratory, Universidad de Oviedo</param.company>
+    <param.summary>Herramientas de Matlab del Laboratorio SiMuR, v2020 rev.01</param.summary>
+    <param.description>Herramientas de Matlab del Laboratorio SiMuR,</param.description>
+    <param.screenshot>${PROJECT_ROOT}\simurtoolsIcon.png</param.screenshot>
     <param.version>20.01</param.version>
-    <param.output>${PROJECT_ROOT}\simurtools.mltbx</param.output>
-    <param.products.name>
-      <item>Simulink</item>
-      <item>Robotics System Toolbox</item>
-      <item>Signal Processing Toolbox</item>
-      <item>Simscape</item>
-    </param.products.name>
-    <param.products.id>
-      <item>2</item>
-      <item>142</item>
-      <item>8</item>
-      <item>104</item>
-    </param.products.id>
-    <param.products.version>
-      <item>10.1</item>
-      <item>3.1</item>
-      <item>8.4</item>
-      <item>4.8</item>
-    </param.products.version>
+    <param.output>${PROJECT_ROOT}\SimurToolbox.mltbx</param.output>
+    <param.products.name />
+    <param.products.id />
+    <param.products.version />
     <param.platforms />
     <param.guid>9c8f571a-25e9-44a2-8073-52b1fccab54e</param.guid>
     <param.exclude.filters>% List files contained in your toolbox folder that you would like to exclude
@@ -40,8 +25,8 @@ CHANGELOG
 %
 % A single file in a subfolder of the toolbox folder:
 .git/*
-simur_demos/*
-simur_help/*
+codigo_demos/*
+codigo_ayudas/*
 %
 % All files in a subfolder of the toolbox folder:
 % example/*
@@ -104,14 +89,14 @@ simur_help/*
     <param.demosxml />
     <param.apps />
     <param.registered.apps />
-    <param.docs>${PROJECT_ROOT}\simurtools\info.xml</param.docs>
-    <param.getting.started.guide>${PROJECT_ROOT}\simurtools\doc\GettingStarted.mlx</param.getting.started.guide>
+    <param.docs>${PROJECT_ROOT}\simurToolbox\info.xml</param.docs>
+    <param.getting.started.guide>${PROJECT_ROOT}\simurToolbox\doc\GettingStarted.mlx</param.getting.started.guide>
     <param.matlabpath.excludes />
     <param.javaclasspath.excludes />
     <param.exported.on.package>false</param.exported.on.package>
     <param.required.addons>
       <requiredaddons>
-        <requiredAddOn downloadURL="" earliest="earliest" fromRepository="false" id="9c8f571a-25e9-44a2-8073-52b1fccab54e" include="true" latest="latest">simurtools</requiredAddOn>
+        <requiredAddOn downloadURL="" earliest="earliest" fromRepository="false" id="9c8f571a-25e9-44a2-8073-52b1fccab54e" include="false" latest="latest">SimurToolbox</requiredAddOn>
       </requiredaddons>
     </param.required.addons>
     <param.matlab.project.id />
@@ -130,8 +115,10 @@ simur_help/*
     <param.additional.sw.mac.url />
     <param.additional.sw.linux.url />
     <unset>
-      <param.screenshot />
       <param.output />
+      <param.products.name />
+      <param.products.id />
+      <param.products.version />
       <param.platforms />
       <param.exclude.pcodedmfiles />
       <param.demosxml />
@@ -155,58 +142,58 @@ simur_help/*
       <param.additional.sw.linux.url />
     </unset>
     <fileset.rootdir>
-      <file>${PROJECT_ROOT}\simurtools</file>
+      <file>${PROJECT_ROOT}\simurToolbox</file>
     </fileset.rootdir>
     <fileset.rootfiles>
-      <file>${PROJECT_ROOT}\simurtools\buscamaximos.m</file>
-      <file>${PROJECT_ROOT}\simurtools\buscamaximosth.m</file>
-      <file>${PROJECT_ROOT}\simurtools\calibra_anatomical.m</file>
-      <file>${PROJECT_ROOT}\simurtools\calibra_ejez.m</file>
-      <file>${PROJECT_ROOT}\simurtools\calibra_mounting.m</file>
-      <file>${PROJECT_ROOT}\simurtools\cargar_datos_shimmer.m</file>
-      <file>${PROJECT_ROOT}\simurtools\cargar_datos_silop.m</file>
-      <file>${PROJECT_ROOT}\simurtools\cargar_datos_xsens.m</file>
-      <file>${PROJECT_ROOT}\simurtools\Contents.m</file>
-      <file>${PROJECT_ROOT}\simurtools\datacrop.m</file>
-      <file>${PROJECT_ROOT}\simurtools\demos.xml</file>
-      <file>${PROJECT_ROOT}\simurtools\dinteg_cms.m</file>
-      <file>${PROJECT_ROOT}\simurtools\dinteg_ddi.m</file>
-      <file>${PROJECT_ROOT}\simurtools\dinteg_lri.m</file>
-      <file>${PROJECT_ROOT}\simurtools\dinteg_msi.m</file>
-      <file>${PROJECT_ROOT}\simurtools\dinteg_ofi.m</file>
-      <file>${PROJECT_ROOT}\simurtools\distancia_arco.m</file>
-      <file>${PROJECT_ROOT}\simurtools\distancia_pendulo.m</file>
-      <file>${PROJECT_ROOT}\simurtools\distancia_penduloparcial.m</file>
-      <file>${PROJECT_ROOT}\simurtools\distancia_raizcuarta.m</file>
-      <file>${PROJECT_ROOT}\simurtools\doble_cumsum_zijlstra.m</file>
-      <file>${PROJECT_ROOT}\simurtools\esfera.m</file>
-      <file>${PROJECT_ROOT}\simurtools\eventos_RT.m</file>
-      <file>${PROJECT_ROOT}\simurtools\eventosCOGrecto.m</file>
-      <file>${PROJECT_ROOT}\simurtools\eventossalto.m</file>
-      <file>${PROJECT_ROOT}\simurtools\html</file>
-      <file>${PROJECT_ROOT}\simurtools\importfile_shim.m</file>
-      <file>${PROJECT_ROOT}\simurtools\importfile_xsens.m</file>
-      <file>${PROJECT_ROOT}\simurtools\info copia.xml</file>
-      <file>${PROJECT_ROOT}\simurtools\info.xml</file>
-      <file>${PROJECT_ROOT}\simurtools\kin_irb120.m</file>
-      <file>${PROJECT_ROOT}\simurtools\Modelos</file>
-      <file>${PROJECT_ROOT}\simurtools\orientacioncompas.m</file>
-      <file>${PROJECT_ROOT}\simurtools\orientaciongiroscopo.m</file>
-      <file>${PROJECT_ROOT}\simurtools\orientacionkalman.m</file>
-      <file>${PROJECT_ROOT}\simurtools\pframe.m</file>
-      <file>${PROJECT_ROOT}\simurtools\private</file>
-      <file>${PROJECT_ROOT}\simurtools\psolido.m</file>
-      <file>${PROJECT_ROOT}\simurtools\slprj</file>
-      <file>${PROJECT_ROOT}\simurtools\sphere3d.m</file>
-      <file>${PROJECT_ROOT}\simurtools\test_urdf.m</file>
-      <file>${PROJECT_ROOT}\simurtools\triad.m</file>
-      <file>${PROJECT_ROOT}\simurtools\voxel.m</file>
+      <file>${PROJECT_ROOT}\simurToolbox\buscamaximos.m</file>
+      <file>${PROJECT_ROOT}\simurToolbox\buscamaximosth.m</file>
+      <file>${PROJECT_ROOT}\simurToolbox\calibra_anatomical.m</file>
+      <file>${PROJECT_ROOT}\simurToolbox\calibra_ejez.m</file>
+      <file>${PROJECT_ROOT}\simurToolbox\calibra_mounting.m</file>
+      <file>${PROJECT_ROOT}\simurToolbox\cargar_datos_shimmer.m</file>
+      <file>${PROJECT_ROOT}\simurToolbox\cargar_datos_silop.m</file>
+      <file>${PROJECT_ROOT}\simurToolbox\cargar_datos_xsens.m</file>
+      <file>${PROJECT_ROOT}\simurToolbox\Contents.m</file>
+      <file>${PROJECT_ROOT}\simurToolbox\data_files</file>
+      <file>${PROJECT_ROOT}\simurToolbox\datacrop.m</file>
+      <file>${PROJECT_ROOT}\simurToolbox\demos.xml</file>
+      <file>${PROJECT_ROOT}\simurToolbox\dinteg_cms.m</file>
+      <file>${PROJECT_ROOT}\simurToolbox\dinteg_ddi.m</file>
+      <file>${PROJECT_ROOT}\simurToolbox\dinteg_lri.m</file>
+      <file>${PROJECT_ROOT}\simurToolbox\dinteg_msi.m</file>
+      <file>${PROJECT_ROOT}\simurToolbox\dinteg_ofi.m</file>
+      <file>${PROJECT_ROOT}\simurToolbox\distancia_arco.m</file>
+      <file>${PROJECT_ROOT}\simurToolbox\distancia_pendulo.m</file>
+      <file>${PROJECT_ROOT}\simurToolbox\distancia_penduloparcial.m</file>
+      <file>${PROJECT_ROOT}\simurToolbox\distancia_raizcuarta.m</file>
+      <file>${PROJECT_ROOT}\simurToolbox\doble_cumsum_zijlstra.m</file>
+      <file>${PROJECT_ROOT}\simurToolbox\doc</file>
+      <file>${PROJECT_ROOT}\simurToolbox\esfera.m</file>
+      <file>${PROJECT_ROOT}\simurToolbox\eventos_RT.m</file>
+      <file>${PROJECT_ROOT}\simurToolbox\eventosCOGrecto.m</file>
+      <file>${PROJECT_ROOT}\simurToolbox\eventossalto.m</file>
+      <file>${PROJECT_ROOT}\simurToolbox\html</file>
+      <file>${PROJECT_ROOT}\simurToolbox\importfile_shim.m</file>
+      <file>${PROJECT_ROOT}\simurToolbox\importfile_xsens.m</file>
+      <file>${PROJECT_ROOT}\simurToolbox\info.xml</file>
+      <file>${PROJECT_ROOT}\simurToolbox\kin_irb120.m</file>
+      <file>${PROJECT_ROOT}\simurToolbox\orientacioncompas.m</file>
+      <file>${PROJECT_ROOT}\simurToolbox\orientaciongiroscopo.m</file>
+      <file>${PROJECT_ROOT}\simurToolbox\orientacionkalman.m</file>
+      <file>${PROJECT_ROOT}\simurToolbox\pframe.m</file>
+      <file>${PROJECT_ROOT}\simurToolbox\private</file>
+      <file>${PROJECT_ROOT}\simurToolbox\psolido.m</file>
+      <file>${PROJECT_ROOT}\simurToolbox\robotmodels</file>
+      <file>${PROJECT_ROOT}\simurToolbox\sphere3d.m</file>
+      <file>${PROJECT_ROOT}\simurToolbox\test_urdf.m</file>
+      <file>${PROJECT_ROOT}\simurToolbox\triad.m</file>
+      <file>${PROJECT_ROOT}\simurToolbox\voxel.m</file>
     </fileset.rootfiles>
     <fileset.depfun.included />
     <fileset.depfun.excluded />
     <fileset.package />
     <build-deliverables>
-      <file location="${PROJECT_ROOT}" name="simurtools.mltbx" optional="false">C:\Users\juancarlos\Documents\MATLAB\projects\simurtools\simurtools.mltbx</file>
+      <file location="${PROJECT_ROOT}" name="SimurToolbox.mltbx" optional="false">C:\Users\juancarlos\Documents\MATLAB\projects\simurtools\SimurToolbox.mltbx</file>
     </build-deliverables>
     <workflow />
     <matlab>
