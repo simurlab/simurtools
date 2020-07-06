@@ -1,4 +1,4 @@
-% EVENTOSCOGRECTO Detecta 5 eventos a partir de las acelerariones verticales y horizontales del COG. Funci�n Off-line
+%EVENTOSCOGRECTO Detecta 5 eventos a partir de las acelerariones verticales y horizontales del COG. FunciÃ¯Â¿Â½n Off-line
 %
 % EVENTOSCOGRECTO Tomando como base las aceleraciones horizontales y verticales del COG realiza un proceso de
 % filtrado que le permite diferenciar cada paso. Una vez detectado un paso, realiza un proceso de detecci�n de
@@ -208,4 +208,5 @@ end;
 for i=1:minimo_de_puntos
     tiempos(ms(i),7)=1;
 end
+
 

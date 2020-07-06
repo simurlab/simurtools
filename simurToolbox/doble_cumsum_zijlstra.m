@@ -1,4 +1,4 @@
-% DOBLE_CUMSUM_ZIJLSTRA   Realiza la doble integral de una aceleracion mediante el método de Kose, 
+%DOBLE_CUMSUM_ZIJLSTRA Realiza la doble integral de una aceleracion mediante el mÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©todo de Kose, 
 %                     para obtener una velocidad suponiendo:
 %   1) que la aceleración tiene media cero. (velocidad final igual a la
 %      inicial)
@@ -44,4 +44,5 @@ function pos=doble_cumsum_zijlstra(acc,freq)
     %Se filtra para evitar el drift de la doble integral
     [b,a]=butter(2,0.1/(freq/2),'high');
     pos=filtfilt(b,a,pos);
+
 
