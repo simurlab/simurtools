@@ -1,5 +1,5 @@
 % SiMuR Toolbox
-% Version 20.01 11-09-2019
+% Version 20.09 11-09-2020
 % Files
 
 %   buscamaximos             - Detecta todos los maximos de una senhal
