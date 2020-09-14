@@ -1,6 +1,6 @@
 % kin_irb120
 %   Define la matriz de cinemática directa del robot ASEA IRB-120
-%   en forma simbólica. los cinco ejes.
+%   en forma simbólica, para los cinco ejes.
 %   Se puede simular 5 o 6 ejes, en el parametro num_ejes
 
 function Tirb120=kin_irb120(num_ejes)
