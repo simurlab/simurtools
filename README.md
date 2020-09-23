@@ -5,8 +5,6 @@ This set of files contains a library and examples to model
 Human-Robot scenarios using Simscape Multibody. 
 
 Check html/simurtb_product_page.html for extra help
-
-Run >> startup_flex_body.m to get started
 See the examples to understand how the blocks are used.
 
 
