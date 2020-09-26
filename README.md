@@ -1,6 +1,9 @@
 SimurTools Library
 Copyright 2017-2020 SiMuR Lab
 
+
+[![View simurtools on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://es.mathworks.com/matlabcentral/fileexchange/80140-simurtools)
+
 This set of files contains a library and examples to model 
 Human-Robot scenarios using Simscape Multibody. 
 
