@@ -16,14 +16,13 @@
 * [Contact](#contact)
 
 ## General info
-This set of files contains a library and examples to model Human-Robot scenarios using Simscape Multibody. 
-Check Libraries/html/simurtb_product_page.html for extra help
-See the examples to understand how the blocks are used.
+This toolbox provides utilities to deal with the typical problems we find at the SiMuR Lab at the University of Oviedo, related to human and robot motion capture and analysis.
 
 ## Technologies
-* Tech 1 - version 1.0
-* Tech 2 - version 2.0
-* Tech 3 - version 3.0
+Other toolboxes and Simulink tools are ocassionally used, 
+* Robotics Systems Toolbox - version 1.0
+* Sensor Fusion Toolbox - version 3.0
+* Simscape
 
 ## Setup
 Describe how to install / setup your local environement / add link to demo version.
@@ -32,14 +31,16 @@ Describe how to install / setup your local environement / add link to demo versi
 Show examples of usage: `Libraries/html/simurtb_product_page.html`
 
 ## Features
-List of features ready and TODOs for future development
-* Awesome feature 1
-* Awesome feature 2
-* Awesome feature 3
+the tools provided can be grouped in three categories:
+* robot motion related tools
+* human motion analysis with IMUs
+* general use tools, hardware dependent
+The firts group uses the Robotic Systems Toolbox from Matlab a lot, other robot models are included.
+The second group usually needs data from sensors, but some database examples are provided in the toolbox. 
 
 To-do list:
-* Wow improvement to be done 1
-* Wow improvement to be done 2
+* Incorpore tools for Mocap
+* Tools for simulation of collaborative robots
 
 ## Status
 Project is _in progress_ 
