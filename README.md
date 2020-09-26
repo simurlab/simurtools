@@ -7,6 +7,7 @@ Human-Robot scenarios using Simscape Multibody.
 Check html/simurtb_product_page.html for extra help
 See the examples to understand how the blocks are used.
 
+[![View simurtools on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://es.mathworks.com/matlabcentral/fileexchange/80140-simurtools)
 
 #########  Release History  #########  
 v 1.1 (R2020a)	Sep 2020      Updated for R2020a
