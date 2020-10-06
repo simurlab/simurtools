@@ -1,5 +1,4 @@
-% Funcion para leer un archivo .csv
-
+% Funcion para leer un archivo sin cabezal.csv
     %ENTRADA
         %Path del archivo.csv
     %SALIDA
