@@ -5,16 +5,6 @@
 
 [![View simurtools on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://es.mathworks.com/matlabcentral/fileexchange/80140-simurtools)
 
-## Table of contents
-* [General info](#general-info)
-* [Screenshots](#screenshots)
-* [Technologies](#technologies)
-* [Setup](#setup)
-* [Features](#features)
-* [Status](#status)
-* [Inspiration](#inspiration)
-* [Contact](#contact)
-
 ## General info
 This toolbox provides utilities to deal with the typical problems we find at the SiMuR Lab at the University of Oviedo, related to human and robot motion capture and analysis.
 Help in: http://simurtools.dieecs.com
