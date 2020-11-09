@@ -32,9 +32,9 @@ v 1.1 (R2020a)	Sep 2020      Updated for R2020a
 v 1.0 (R2019b)	Mar 2019      Updated for R2019b
                               Uses MATLAB Project
 
-## Inspiration
-Copyright 2017-2020 SiMuR Lab
-
 ## Contact
 Created by [@simurlab](https://simur.dieecs.com/) - feel free to contact me!
+
+Copyright 2017-2020 SiMuR Lab
+
 
