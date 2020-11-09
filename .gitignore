@@ -1,7 +1,5 @@
-
-simur_data/.DS_Store
-simur_data/.DS_Store
-simur_help/.DS_Store
-simurtools/.DS_Store
+resources/
 .DS_Store
+*/.DS_Store
 *.autosave
+*.html
