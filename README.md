@@ -17,30 +17,20 @@
 
 ## General info
 This toolbox provides utilities to deal with the typical problems we find at the SiMuR Lab at the University of Oviedo, related to human and robot motion capture and analysis.
+Help in: http://simurtools.dieecs.com
 
 ## Technologies
-Other toolboxes and Simulink tools are ocassionally used, 
-* Robotics Systems Toolbox - version 1.0
-* Sensor Fusion Toolbox - version 3.0
-* Simscape
+Other toolboxes and Simulink tools are ocassionally used: Robotics Systems Toolbox, Sensor Fusion Toolbox, Simscape
 
 ## Setup
-Describe how to install / setup your local environement / add link to demo version.
+Download from the AddsOn Manager inside Matlab
 
 ## Code Examples
-Show examples of usage: `Libraries/html/simurtb_product_page.html`
+Examples of usage in the Matlab AddsOn Manager
 
 ## Features
-the tools provided can be grouped in three categories:
-* robot motion related tools
-* human motion analysis with IMUs
-* general use tools, hardware dependent
-The firts group uses the Robotic Systems Toolbox from Matlab a lot, other robot models are included.
-The second group usually needs data from sensors, but some database examples are provided in the toolbox. 
-
-To-do list:
-* Incorpore tools for Mocap
-* Tools for simulation of collaborative robots
+the tools provided can be grouped in three categories: robot motion related tools, human motion analysis with IMUs and general use tools.
+Some robot models are included. Some database examples are provided. 
 
 ## Status
 Project is _in progress_ 
