@@ -20,38 +20,4 @@
         </demoitem>
     </demosection>
     
-        <demosection>
-        <label>Robotics Course</label>
-        <demoitem>
-            <label>Tema 3, Ejercicio 1</label>
-            <type>M-file</type>
-            <source>ejercicio3_01</source>
-        </demoitem>
-        <demoitem>
-            <label>Tema 3, Ejercicio 2</label>
-            <type>M-file</type>
-            <source>ejercicio3_02</source>
-        </demoitem>
-                <demoitem>
-            <label>Tema 3, Ejercicio 3</label>
-            <type>M-file</type>
-            <source>ejercicio3_03</source>
-        </demoitem>
-                <demoitem>
-            <label>Tema 3, Ejercicio 4</label>
-            <type>M-file</type>
-            <source>ejercicio3_04</source>
-        </demoitem>
-        <demoitem>
-            <label>Tema 3, Ejercicio 5</label>
-            <type>M-file</type>
-            <source>ejercicio3_05</source>
-        </demoitem>
-        <demoitem>
-            <label>Tema 4, Ejercicio 1</label>
-            <type>M-file</type>
-            <source>ejercicio4_01</source>
-        </demoitem>
-    </demosection>
-
 </demos>

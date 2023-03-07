@@ -1,5 +1,5 @@
 % SiMuR Toolbox
-% Version 1.1.0 16-09-2020
+% Version 1.4.0 07-03-2023
 % Files
 
 %   buscamaximos             - Detecta todos los maximos de una senhal
@@ -28,8 +28,6 @@
 %   voxel                    - function to draw a 3-D voxel in a 3-D plot
 %   kin_irb120               - kin_irb120
 %   eventossalto             - Detecta 4 eventos a partir de las acelerariones verticales
-%   test_urdf                - 
-%   test_urdf                - VR:
 %   triad                    - Algoritmo para la estimacion de la rotacion mediante el triad.
 %   dinteg_msi               - dinteg_msi   Realiza la doble integral de una aceleracion mediante el metodo , 
 %   calibra_anatomical       - Reorient the obtained data so that they coincide approximately with 
