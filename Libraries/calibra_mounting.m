@@ -33,8 +33,8 @@ rot_accs=AccXsens;
 frac_bloque=floor((zona_util)*k_espera_calibra);
 % Por si quisieramos cambiar los ejes de la posici?nm inicial del sensor:
 vINIPOS(1,:)=[ 1  0  0   0  1  0   0  0  1];
-M0=vec2mat(vINIPOS(1,:),3);
-
+%M0=vec2mat(vINIPOS(1,:),3);
+M0=reshape(vINIPOS(1,:),3,[]);
 
 %% Proceso en si mismo:
 ini_cpos(1)=k_inicial;
@@ -64,7 +64,7 @@ for cpos=1:num_posiciones
     % y en forma de matriz:
     mROTMini=[xlocal' ylocal' zlocal'];
     % mROTMini=vec2mat(vROTA(cpos,:),3)';
-    mROTM=mROTMini*vec2mat(vCALIBRA(cpos,:),3)'*M0;
+    mROTM=mROTMini*reshape(vCALIBRA(cpos,:),3,[])'*M0;
     ROTACOMPLETA(cpos,:)=reshape(mROTM',[],9);
     
     % dibujo de las accs originales vs las calibradas:
