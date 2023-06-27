@@ -17,7 +17,7 @@
 
 % 	Copyright (C) Ivan Maza 2001
 
-function [h1,h2] = frame(TT, color, tam, opt)
+function [h1,h2] = pframe(TT, color, tam, opt)
 
 % Se calcula el numero de transformaciones a representar
 np = size(TT,3);
@@ -78,8 +78,8 @@ for (k=1:np)
 	else
    	erasemode='normal';
    	% Se representan todas las flechas de los ejes
-   	set(hdl(1),'faces',lfs1,'vertices',[li1(1,:)' li1(2,:)' li1(3,:)'],'FaceColor',color);
-   	set(hdl(2),'faces',lfs2,'vertices',[li2(1,:)' li2(2,:)' li2(3,:)'],'FaceColor',color);
+   	set(hdl(1),'faces',lfs1,'vertices',[li1(1,:)' li1(2,:)' li1(3,:)'],'FaceColor',color, 'FaceAlpha', 1);
+   	set(hdl(2),'faces',lfs2,'vertices',[li2(1,:)' li2(2,:)' li2(3,:)'],'FaceColor',color, 'FaceAlpha', 1);
    	% Se representan las letras
    	set(etiq(1),'Position',[posletrax(1),posletrax(2),posletrax(3)]);
    	set(etiq(2),'Position',[posletray(1),posletray(2),posletray(3)]);
